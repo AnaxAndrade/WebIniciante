@@ -1,0 +1,13 @@
+WEB SITE/ WEB APP
+    - Estático
+        1º -> HTML + CSS
+        2º -> HTML + CSS + JS
+    - Dinâmico
+        Estatático + Backend (BASE DE DADOS + SERVIDOR)
+
+
+
+
+
+BASE DE DADOS - SERVIDOR - internet - BROWSER
+BASE DE DADOS - SERVIDOR - internet - APP

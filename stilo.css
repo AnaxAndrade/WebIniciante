@@ -1,0 +1,24 @@
+.para {
+  color: #ff00ff;
+  padding: 5px;
+  font-size: 18px;
+  font-family: Arial;
+  float: left;
+  display: inline;
+}
+
+#caixa {
+  width: 50%;
+}
+
+.lbl {
+  font-weight: bold;
+}
+
+#login-box {
+  margin-top: 30px;
+  margin-left: 30%;
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 33%;
+}

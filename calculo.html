@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stilo.css">
+
+
+    <script type="text/javascript">
+
+        function calcular() {
+            var valor1 = document.getElementById("val1").value;
+            var valor2 = document.getElementById("val2").value;
+            var res = document.getElementById("resultado").value;
+
+            if (valor1.length == 0) {
+                alert("Valor 1 é obrigatório!");
+                return;
+            }
+
+
+            if (valor2.length == 0) {
+                document.getElementById("val2").value = Number(res) - Number(valor1);
+            }
+            else if (res.length == 0) {
+                document.getElementById("resultado").value = Number(valor1) + Number(valor2);
+            }
+        }
+
+        function limpar() {
+            document.getElementById("val1").value = "";
+            document.getElementById("val2").value = "";
+            document.getElementById("resultado").value = "";
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="caixa">
+        <a id="paragrafo-1" class="para" href="index.html">Início</a>
+        <a id="paragrafo-2" class="para" href="https://google.com" target="_blank">Google</a>
+        <a id="paragrafo-2" class="para" href="calculo.html">Calcular</a>
+        <a id="paragrafo-2" class="para" href="sobre.html">Sobre</a>
+    </div>
+    <div style="clear: both;"></div>
+
+    Valor 1<input id="val1" type="number">
+    <br>
+    Valor 2<input id="val2" type="number">
+    <br>
+    Total <input id="resultado" type="number">
+    <br>
+    <button onclick="calcular()">Calcular</button>
+    <button onclick="limpar()">Limpar</button>
+
+
+
+</body>
+
+</html>
